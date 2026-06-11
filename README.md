@@ -1,436 +1,407 @@
+
+
+
+
 # Oregon Hospital Readmission Analysis
 
-> Identifying hospitals, clinical conditions, and geographic regions associated with elevated readmission risk to support quality improvement initiatives and reduce CMS reimbursement risk.
+
+
+### Identifying Operational Drivers of Readmission Risk Across Oregon's Acute Care Network
+
+
 
 ---
 
-# Executive Summary
 
-Hospital readmissions remain a critical performance metric for healthcare organizations because excessive readmissions can negatively impact patient outcomes while exposing hospitals to financial penalties under the Centers for Medicare & Medicaid Services (CMS) Hospital Readmissions Reduction Program (HRRP).
 
-This analysis evaluates FY2026 Oregon hospital performance using CMS HRRP data and hospital quality ratings to identify where readmission risk is concentrated and where healthcare leaders should focus improvement efforts.
+## Executive Summary
 
-Key findings revealed that only 4 of 29 Oregon hospitals (13.8%) exceeded the CMS benchmark readmission ratio of 1.00, indicating that elevated risk is concentrated among a relatively small subset of facilities. Higher-rated hospitals consistently demonstrated lower readmission ratios, while Hip/Knee Replacement, COPD, and Pneumonia emerged as the highest-risk clinical conditions statewide.
 
-The analysis provides hospital executives, quality improvement teams, and healthcare operations leaders with a framework for prioritizing interventions, allocating resources, and reducing avoidable readmissions.
 
----
+Reporting to the Chief Quality Officer of a statewide healthcare network, an analysis was conducted to identify hospitals, clinical service lines, and geographic regions associated with elevated readmission risk under the CMS Hospital Readmissions Reduction Program (HRRP).
 
-# Business Context
 
-Healthcare organizations participating in the Hospital Readmissions Reduction Program are evaluated on their ability to prevent avoidable patient readmissions.
 
-Excess readmissions may indicate operational inefficiencies such as:
+The assessment revealed that readmission risk is highly concentrated rather than broadly distributed across Oregon hospitals. While the statewide average Excess Readmission Ratio (ERR) remained below the CMS benchmark at **0.961**, only **4 of 29 hospitals (13.8%)** exceeded the threshold of **1.00**.
 
-* Inadequate discharge planning
-* Poor care-transition management
-* Insufficient patient education
-* Limited post-discharge follow-up
 
-Because CMS may reduce Medicare reimbursements for hospitals with excessive readmissions, healthcare leaders require visibility into where readmission risk is concentrated and which facilities may require targeted intervention.
 
----
+Further analysis identified a meaningful relationship between hospital quality performance and readmission outcomes. Hospitals receiving **4-star CMS ratings achieved readmission performance 5.8% better than 2-star facilities**, suggesting operational excellence may play a significant role in reducing avoidable readmissions.
 
-# Business Questions
 
-### Hospital Performance
 
-* Which Oregon hospitals demonstrate the highest readmission risk?
-* Which hospitals exceed CMS readmission benchmarks?
+At the service-line level, **Hip/Knee Replacement, COPD, and Pneumonia** demonstrated the highest average readmission risk statewide. Geographically, **Coos County** emerged as the only county exceeding the CMS benchmark.
 
-### Clinical Performance
 
-* Which conditions contribute most to elevated readmission risk?
-* Which service lines may benefit from targeted quality improvement efforts?
 
-### Quality Performance
+These findings suggest a targeted intervention strategy may generate substantially greater improvements than broad statewide initiatives.
 
-* How do CMS Overall Hospital Ratings relate to readmission outcomes?
-* Do higher-rated hospitals consistently demonstrate lower readmission risk?
 
-### Geographic Performance
-
-* Which counties exhibit elevated readmission performance?
-* Where should regional healthcare initiatives be prioritized?
 
 ---
 
-# Northstar Metrics
 
-## 1. Average Readmission Ratio (ERR)
 
-Primary measure of hospital readmission performance.
+## Dashboard Overview
 
-Formula:
 
-Average ERR =
-SUM(Excess Readmission Ratio)
-÷ Number of Reported Conditions
-
-Interpretation:
-
-* Greater than 1.00 = Worse than expected
-* Equal to 1.00 = Expected performance
-* Less than 1.00 = Better than expected
-
-Business Importance:
-
-Serves as the primary indicator of readmission risk exposure and potential CMS reimbursement penalties.
-
----
-
-## 2. High-Risk Condition Rate
-
-Measures the percentage of reported conditions exceeding CMS expectations.
-
-Formula:
-
-High-Risk Condition Rate =
-(Worse Than Expected Conditions
-÷ Total Reported Conditions) × 100
-
-Business Importance:
-
-Identifies hospitals with broader performance challenges rather than isolated issues.
-
----
-
-## 3. Average CMS Rating
-
-Measures overall hospital quality performance.
-
-Formula:
-
-Average CMS Rating =
-SUM(CMS Ratings)
-÷ Number of Hospitals
-
-Business Importance:
-
-Provides a standardized benchmark for comparing overall hospital quality and evaluating its relationship to readmission performance.
-
----
-
-# Dashboard Preview
-
-## Executive Overview
 
 ![Executive Overview](screenshots/executive_overview.png)
 
-## Hospital Details
+
+
+
+---
+
+
+
+## Business Questions
+
+
+
+### Hospital Performance
+
+
+
+* Which Oregon hospitals demonstrate the highest readmission risk?
+
+* Which facilities exceed CMS benchmarks?
+
+
+
+### Clinical Performance
+
+
+
+* Which conditions contribute most significantly to readmission risk?
+
+* Which service lines should receive operational attention?
+
+
+
+### Quality Performance
+
+
+
+* Are higher-rated hospitals achieving better readmission outcomes?
+
+
+
+### Geographic Performance
+
+
+
+* Which counties exhibit elevated risk?
+
+* Where should regional quality-improvement efforts be prioritized?
+
+
+
+---
+
+
+
+## Key Finding #1
+
+
+
+### Only 13.8% of Hospitals Exceeded CMS Benchmarks
+
+
+
+| Hospital                                   | Average ERR |
+
+| ------------------------------------------ | ----------: |
+
+| Legacy Meridian Park Medical Center        |       1.032 |
+
+| Providence Medford Medical Center          |       1.032 |
+
+| Providence Willamette Falls Medical Center |       1.024 |
+
+| Bay Area Hospital                          |       1.013 |
+
+
+
+Readmission risk was concentrated among a small number of facilities, suggesting targeted interventions may deliver a greater return than broad statewide initiatives.
+
+
+```markdown
+
+![Hospital Risk Analysis](screenshots/hospital_risk_analysis.png)
+
+
+
+
+---
+
+
+
+## Key Finding #2
+
+
+
+### Higher-Rated Hospitals Consistently Outperformed Lower-Rated Facilities
+
+
+
+| CMS Rating | Average ERR |
+
+| ---------- | ----------: |
+
+| 2-Star     |       0.999 |
+
+| 3-Star     |       0.962 |
+
+| 4-Star     |       0.941 |
+
+
+
+Hospitals rated 4 stars achieved readmission performance approximately **5.8% better** than hospitals rated 2 stars.
+
+
+
+```markdown
+
+![CMS Rating Analysis](screenshots/cms_rating_analysis.png)
+
+```
+
+
+
+---
+
+
+
+## Key Finding #3
+
+
+
+### Orthopedic and Respiratory Care Pathways Demonstrated Elevated Risk
+
+
+
+| Condition            | Average ERR |
+
+| -------------------- | ----------: |
+
+| Hip/Knee Replacement |       0.990 |
+
+| COPD                 |       0.976 |
+
+| Pneumonia            |       0.961 |
+
+
+
+These service lines represent the greatest opportunity for targeted operational improvement.
+
+
+
+```markdown
+
+![Condition Analysis](screenshots/condition_analysis.png)
+
+```
+
+
+
+---
+
+
+
+## Key Finding #4
+
+
+
+### Geographic Variation Suggests Localized Operational Challenges
+
+
+
+| County     | Average ERR |
+
+| ---------- | ----------: |
+
+| Coos       |       1.013 |
+
+| Malheur    |       0.996 |
+
+| Washington |       0.990 |
+
+| Clackamas  |       0.985 |
+
+| Multnomah  |       0.964 |
+
+
+
+Coos County was the only county to exceed the CMS benchmark.
+
+
+
+---
+
+
+
+## Hospital Performance Dashboard
+
+
 
 ![Hospital Details](screenshots/hospital_details.png)
 
----
 
-# Dashboard KPIs
 
-| KPI                            | Value |
-| ------------------------------ | ----: |
-| Hospitals with HRRP Data       |    29 |
-| Average Readmission Ratio      | 0.961 |
-| Worse-Than-Expected Conditions |    29 |
-| Average CMS Rating             |   3.0 |
 
 ---
 
-# Data Sources
 
-## CMS Hospital Readmissions Reduction Program (HRRP)
 
-Provided:
+## Strategic Recommendations
 
-* Excess Readmission Ratios
-* Clinical Condition Performance
-* Hospital Identifiers
 
-## CMS Hospital General Information
 
-Provided:
+### Hospital Operations Leadership
 
-* Hospital Characteristics
-* Geographic Information
-* CMS Overall Hospital Ratings
 
----
 
-# Technical Approach
+* Conduct operational reviews of the four hospitals exceeding CMS benchmarks.
 
-## Data Preparation
+* Strengthen discharge planning and follow-up protocols.
 
-The project combined CMS HRRP and Hospital General Information datasets to create a unified reporting model.
+* Establish monthly monitoring for facilities approaching benchmark thresholds.
 
-Key preparation activities included:
 
-* Filtering to Oregon hospitals
-* Standardizing facility identifiers
-* Validating hospital matches across datasets
-* Removing incomplete records
-* Creating calculated performance metrics
-* Verifying KPI consistency between SQL and Power BI
 
----
+### Quality Improvement Teams
 
-## SQL Analysis
 
-SQL was used to investigate performance across multiple dimensions.
 
-Analysis included:
+* Focus intervention programs on Hip/Knee Replacement, COPD, and Pneumonia.
 
-* Hospital-level benchmarking
-* Condition-level performance analysis
-* County-level aggregation
-* CMS Rating segmentation
-* Risk classification calculations
+* Standardize care-transition workflows across facilities.
 
-Example Query:
+* Benchmark high-performing hospitals.
 
-```sql
-SELECT
-    condition_name,
-    COUNT(DISTINCT facility_id) AS hospitals_reporting,
-    AVG(excess_readmission_ratio) AS avg_readmission_ratio
-FROM vw_readmissions_clean
-GROUP BY condition_name
-ORDER BY avg_readmission_ratio DESC;
-```
+
+
+### Regional Healthcare Stakeholders
+
+
+
+* Prioritize collaborative initiatives within Coos County.
+
+* Improve coordination between hospitals, primary care providers, and post-acute care organizations.
+
+
 
 ---
 
-## Power BI Dashboard Development
 
-Power BI was used to develop an executive reporting solution focused on:
 
-* KPI monitoring
-* Hospital benchmarking
-* Geographic performance analysis
-* Readmission risk identification
-* Executive decision support
+## Business Impact
 
-Interactive filtering enables stakeholders to evaluate performance by:
 
-* Hospital
-* County
-* CMS Rating
-* Clinical Condition
 
----
+This analysis demonstrates that Oregon's readmission challenge is concentrated among a limited number of hospitals, conditions, and geographic regions.
 
-# Key Findings
 
-## Finding #1: Readmission Risk Is Highly Concentrated
 
-Only 4 of 29 Oregon hospitals (13.8%) exceeded the CMS benchmark readmission ratio of 1.00.
+By directing quality-improvement resources toward the highest-risk facilities and patient populations, healthcare leaders can:
 
-| Hospital                                   | Average ERR |
-| ------------------------------------------ | ----------: |
-| Legacy Meridian Park Medical Center        |       1.032 |
-| Providence Medford Medical Center          |       1.032 |
-| Providence Willamette Falls Medical Center |       1.024 |
-| Bay Area Hospital                          |       1.013 |
 
-Because elevated risk is concentrated among a small subset of facilities, targeted quality-improvement initiatives are likely to generate greater impact than broad statewide interventions.
 
-Bay Area Hospital warrants particular attention because it recorded multiple worse-than-expected conditions, indicating broader operational risk.
+* Reduce avoidable readmissions
+
+* Improve patient outcomes
+
+* Reduce CMS reimbursement risk
+
+* Improve operational efficiency
+
+* Increase the effectiveness of quality-improvement investments
+
+
 
 ---
 
-## Finding #2: Higher-Rated Hospitals Demonstrated Better Readmission Performance
 
-Average readmission ratios consistently declined as CMS ratings increased.
 
-| CMS Rating | Average ERR |
-| ---------- | ----------: |
-| 2-Star     |       0.999 |
-| 3-Star     |       0.962 |
-| 4-Star     |       0.941 |
+## Data Model
 
-Hospitals rated 4 stars achieved a 5.8% lower average readmission ratio than 2-star hospitals.
 
-Although this relationship does not establish causality, the results suggest hospitals with stronger quality systems may also maintain more effective discharge planning, care coordination, and patient follow-up processes.
-
----
-
-## Finding #3: Elevated Risk Was Concentrated Within Specific Clinical Conditions
-
-The highest statewide average readmission ratios were observed in:
-
-| Condition            | Average ERR |
-| -------------------- | ----------: |
-| Hip/Knee Replacement |       0.990 |
-| COPD                 |       0.976 |
-| Pneumonia            |       0.961 |
-
-These findings suggest that improvements in discharge protocols, patient education, rehabilitation planning, and follow-up care may yield measurable reductions in readmission risk.
-
-Rather than implementing hospital-wide interventions, healthcare leaders may achieve greater impact by focusing on these high-risk service lines.
-
----
-
-## Finding #4: Geographic Variation Suggests Localized Risk Factors
-
-Several counties demonstrated higher average readmission ratios than the statewide average.
-
-| County     | Average ERR |
-| ---------- | ----------: |
-| Coos       |       1.013 |
-| Malheur    |       0.996 |
-| Washington |       0.990 |
-| Clackamas  |       0.985 |
-| Multnomah  |       0.964 |
-
-Coos County was the only county to exceed the CMS benchmark of 1.00.
-
-This pattern suggests regional healthcare access, post-acute care availability, patient demographics, and care-transition infrastructure may influence readmission outcomes beyond individual hospital performance.
-
----
-
-# Stakeholder Impact
-
-## Hospital Executives
-
-Identify facilities at greatest risk of future CMS reimbursement penalties and prioritize quality-improvement investments.
-
-## Quality Improvement Teams
-
-Target specific clinical conditions contributing most to elevated readmission risk.
-
-## Regional Healthcare Leaders
-
-Monitor county-level performance trends and coordinate improvement initiatives across healthcare systems.
-
-## Care Coordination Teams
-
-Strengthen discharge planning and post-discharge follow-up programs for high-risk patient populations.
-
----
-
-# Strategic Recommendations
-
-## Priority 1: Focus Resources on High-Risk Facilities
-
-Conduct targeted operational reviews of:
-
-* Legacy Meridian Park Medical Center
-* Providence Medford Medical Center
-* Providence Willamette Falls Medical Center
-* Bay Area Hospital
-
-Review discharge workflows, care-transition programs, and follow-up protocols to identify opportunities for improvement.
-
----
-
-## Priority 2: Improve High-Risk Care Pathways
-
-Prioritize quality-improvement initiatives within:
-
-* Hip/Knee Replacement
-* COPD
-* Pneumonia
-
-These conditions demonstrated the highest average readmission risk statewide.
-
----
-
-## Priority 3: Monitor Geographic Hotspots
-
-Develop county-level monitoring programs focused on:
-
-* Coos County
-* Malheur County
-* Washington County
-
-These regions demonstrated elevated readmission performance and may benefit from coordinated healthcare interventions.
-
----
-
-## Priority 4: Benchmark High-Performing Hospitals
-
-Evaluate operational practices among hospitals demonstrating consistently low readmission ratios and use those findings to establish statewide best-practice frameworks.
-
----
-
-# Business Impact
-
-This analysis provides a repeatable framework for identifying hospitals, conditions, and geographic regions associated with elevated readmission risk.
-
-Potential organizational benefits include:
-
-* Reduced avoidable readmissions
-* Improved patient outcomes
-* Stronger CMS performance
-* Reduced reimbursement risk
-* More effective allocation of quality-improvement resources
-* Data-driven operational decision making
-
----
-
-# Limitations
-
-* Analysis includes only Oregon hospitals reporting HRRP measures.
-* Hospitals with incomplete geographic information were excluded.
-* County-level results may be influenced by small sample sizes.
-* Observed relationships should not be interpreted as causal relationships.
-* Additional patient-level data would strengthen root-cause analysis.
-
----
-
-# Skills Demonstrated
-
-### Analytics
-
-* Healthcare Analytics
-* KPI Development
-* Root Cause Investigation
-* Performance Benchmarking
-* Executive Reporting
-* Data Storytelling
-
-### SQL
-
-* Data Cleaning
-* Data Validation
-* Joins
-* Aggregations
-* Conditional Logic
-* Business Query Development
-
-### Power BI
-
-* Dashboard Design
-* KPI Reporting
-* Interactive Reporting
-* Executive Dashboard Development
-* Data Visualization
-
----
-
-# Repository Structure
 
 ```text
-oregon-hospital-readmission-analysis
-│
-├── README.md
-│
-├── dashboard
-│   └── Oregon_Hospital_Readmission_Analysis.pbix
-│
-├── screenshots
-│   ├── executive_overview.png
-│   └── hospital_details.png
-│
-└── sql
-    └── oregon_hospital_readmission_analysis.sql
+
+Hospital Information
+
+        │
+
+        ▼
+
+Readmission Performance
+
+        │
+
+        ├── Condition Analysis
+
+        ├── CMS Rating Analysis
+
+        └── County Analysis
+
 ```
+
+
 
 ---
 
-# Author
+
+
+## Repository Structure
+
+
+
+```text
+
+oregon-hospital-readmission-analysis
+
+│
+
+├── README.md
+
+├── dashboard
+
+├── screenshots
+
+├── sql
+
+└── data
+
+```
+
+
+
+---
+
+
+
+## Author
+
+
 
 **Romand Kuang**
 
+
+
 Data Analyst | Healthcare Analytics | Business Intelligence
+
+
 
 Portfolio: [www.romandkuang.com](http://www.romandkuang.com)
 
+
+
 GitHub: github.com/romandkuang
+
+
+
+---
+
+
