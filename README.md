@@ -107,28 +107,17 @@ These findings suggest a targeted intervention strategy may generate substantial
 
 ### Only 13.8% of Hospitals Exceeded CMS Benchmarks
 
+| Hospital | Average ERR |
+|-----------|------------:|
+| Legacy Meridian Park Medical Center | 1.032 |
+| Providence Medford Medical Center | 1.032 |
+| Providence Willamette Falls Medical Center | 1.024 |
+| Bay Area Hospital | 1.013 |
 
-
-| Hospital                                   | Average ERR |
-
-| ------------------------------------------ | ----------: |
-
-| Legacy Meridian Park Medical Center        |       1.032 |
-
-| Providence Medford Medical Center          |       1.032 |
-
-| Providence Willamette Falls Medical Center |       1.024 |
-
-| Bay Area Hospital                          |       1.013 |
 
 
 
 Readmission risk was concentrated among a small number of facilities, suggesting targeted interventions may deliver a greater return than broad statewide initiatives.
-
-
-
-
-![Hospital Risk Analysis](screenshots/hospital_risk_analysis.png)
 
 
 
@@ -146,14 +135,10 @@ Readmission risk was concentrated among a small number of facilities, suggesting
 
 
 | CMS Rating | Average ERR |
-
-| ---------- | ----------: |
-
-| 2-Star     |       0.999 |
-
-| 3-Star     |       0.962 |
-
-| 4-Star     |       0.941 |
+|------------|------------:|
+| 2-Star | 0.999 |
+| 3-Star | 0.962 |
+| 4-Star | 0.941 |
 
 
 
@@ -174,16 +159,11 @@ Hospitals rated 4 stars achieved readmission performance approximately **5.8% be
 ### Orthopedic and Respiratory Care Pathways Demonstrated Elevated Risk
 
 
-
-| Condition            | Average ERR |
-
-| -------------------- | ----------: |
-
-| Hip/Knee Replacement |       0.990 |
-
-| COPD                 |       0.976 |
-
-| Pneumonia            |       0.961 |
+| Condition | Average ERR |
+|-----------|------------:|
+| Hip/Knee Replacement | 0.990 |
+| COPD | 0.976 |
+| Pneumonia | 0.961 |
 
 
 
@@ -209,24 +189,18 @@ These service lines represent the greatest opportunity for targeted operational 
 
 
 
-| County     | Average ERR |
-
-| ---------- | ----------: |
-
-| Coos       |       1.013 |
-
-| Malheur    |       0.996 |
-
-| Washington |       0.990 |
-
-| Clackamas  |       0.985 |
-
-| Multnomah  |       0.964 |
+| County | Average ERR |
+|--------|------------:|
+| Coos | 1.013 |
+| Malheur | 0.996 |
+| Washington | 0.990 |
+| Clackamas | 0.985 |
+| Multnomah | 0.964 |
 
 
+**Coos County** was the only county to exceed the CMS benchmark threshold of **1.00**.
 
-Coos County was the only county to exceed the CMS benchmark.
-
+This pattern suggests regional healthcare access, provider availability, post-acute care infrastructure, and socioeconomic factors may influence readmission outcomes beyond individual hospital performance.
 
 
 ---
@@ -260,7 +234,12 @@ Coos County was the only county to exceed the CMS benchmark.
 
 * Establish monthly monitoring for facilities approaching benchmark thresholds.
 
-
+### Limitations
+* Analysis includes only Oregon hospitals reporting HRRP measures.
+* Hospitals with incomplete geographic information were excluded.
+* County-level results may be influenced by small sample sizes.
+* Observed relationships should not be interpreted as causal relationships.
+* Additional patient-level data would strengthen root-cause analysis.
 
 ### Quality Improvement Teams
 
