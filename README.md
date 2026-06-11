@@ -191,11 +191,9 @@ These service lines represent the greatest opportunity for targeted operational 
 
 
 
-```markdown
 
 ![Condition Analysis](screenshots/condition_analysis.png)
 
-```
 
 
 
