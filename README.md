@@ -126,7 +126,7 @@ These findings suggest a targeted intervention strategy may generate substantial
 Readmission risk was concentrated among a small number of facilities, suggesting targeted interventions may deliver a greater return than broad statewide initiatives.
 
 
-```markdown
+
 
 ![Hospital Risk Analysis](screenshots/hospital_risk_analysis.png)
 
@@ -161,15 +161,9 @@ Hospitals rated 4 stars achieved readmission performance approximately **5.8% be
 
 
 
-```markdown
+
 
 ![CMS Rating Analysis](screenshots/cms_rating_analysis.png)
-
-```
-
-
-
----
 
 
 
