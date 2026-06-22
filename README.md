@@ -268,7 +268,7 @@ The hospital performance dashboard provides a detailed view of facility-level re
     ├── README.md
     │
     ├── dashboard
-    │   └── Oregon_Hospital_Readmission_Analysis.pbix
+    │   └── Oregon_Hospital_Readmission_Analysis.pbit
     │
     ├── screenshots
     │   ├── executive_overview.png
@@ -291,7 +291,7 @@ The hospital performance dashboard provides a detailed view of facility-level re
 ## Footer
 
 **Romand Kuang**  
-Data Analyst | Healthcare Analytics | Business Intelligence
+**Data Analyst**  |  **Healthcare Analytics** | **Business Intelligence**
 
-Portfolio: https://www.romandkuang.com  
-GitHub: https://github.com/romandkuang
+**GitHub:** [github.com/romandkuang](https://github.com/romandkuang)  
+**Power BI Dashboard:** [Download Dashboard](https://github.com/romandkuang/oregon-hospital-readmission-analysis/blob/main/dashboards/oregon_hospital_readmission.pbix)
