@@ -22,6 +22,9 @@ The analysis was designed for healthcare operations and quality leaders who need
 
 ---
 ## Interactive Dashboard
+![Hospital Details](screenshots/hospital_details.png)
+
+The hospital performance dashboard provides a detailed view of facility-level readmission patterns, condition-level risk, and benchmark comparison. This view supports operational review by helping stakeholders identify which hospitals are above benchmark, which conditions are closest to risk thresholds, and where intervention should be prioritized.
 
 [View Interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZTA0ZTkzMTktNjRmMy00MzcwLWIyZDEtOGQzYjlhNWEzY2Q5IiwidCI6ImYyNTUyZTQ3LTkzMTYtNDBmYy05ZjAwLTdmODU4MmMxYTFkMyIsImMiOjZ9)
 
@@ -208,15 +211,6 @@ County-level analysis identified meaningful geographic variation in readmission 
    - Malheur County averaged **0.996**, while Washington County averaged **0.990**.
    - Although both remained below the benchmark, they were close enough to justify monitoring.
    - Small changes in hospital performance could push these counties above the benchmark in future reporting periods.
-
----
-
-# Hospital Performance Dashboard
-
-![Hospital Details](screenshots/hospital_details.png)
-
-The hospital performance dashboard provides a detailed view of facility-level readmission patterns, condition-level risk, and benchmark comparison. This view supports operational review by helping stakeholders identify which hospitals are above benchmark, which conditions are closest to risk thresholds, and where intervention should be prioritized.
-
 ---
 
 # Recommendations
