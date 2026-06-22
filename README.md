@@ -25,7 +25,7 @@ The analysis was designed for healthcare operations and quality leaders who need
 
 [View Interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZTA0ZTkzMTktNjRmMy00MzcwLWIyZDEtOGQzYjlhNWEzY2Q5IiwidCI6ImYyNTUyZTQ3LTkzMTYtNDBmYy05ZjAwLTdmODU4MmMxYTFkMyIsImMiOjZ9)
 
-[Download Power BI File](dashboards/oregon_hospital_readmission.pbix)
+[Download Power BI File]([dashboards/oregon_hospital_readmission.pbi](https://github.com/romandkuang/oregon-hospital-readmission-analysis/blob/main/dashboards/oregon_hospital_readmission.pbit)x)
 
 
 ## Northstar Metrics
